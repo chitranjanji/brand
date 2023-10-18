@@ -1,0 +1,184 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: gilroy;
+    text-transform: uppercase;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    width: 100vw;
+    height:100%;
+    position: relative;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+}
+#nav>h4{
+    margin-left: 20px;
+    word-spacing: 5px; 
+}
+#nav>h3{
+    margin-right: 20px;
+}
+#nav h3>span{
+    color: coral;
+     margin-right: 90px;
+}
+#left{
+    position: absolute;
+    top: 8%;
+    display: flex;
+    flex-direction: column;
+    left: 5%;
+}
+#left>i{
+    color: coral;
+}
+#left>h2{
+    line-height: 1;
+    font-size: 20px;
+}
+#left span{
+    color: coral;
+}
+#text1{
+    top: 20%;
+    position: absolute;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    gap: 20px;
+}
+#text1::-webkit-scrollbar{
+    display: none;
+}
+#text1>h1{
+     font-size: 100px;
+     font-weight: 900;
+     animation-name: scroll;
+     animation-duration: 1.5s;
+     animation-fill-mode: both;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+
+}
+#text2{
+    top: 35%;
+    position: absolute;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    gap: 20px;
+}
+#text2::-webkit-scrollbar{
+    display: none;
+}
+#text2>h1{
+     font-size: 100px;
+     font-weight: 900;
+      color: rgba(0, 0, 0, 0.342);
+      z-index: 99999;
+     animation-name: scroll;
+     animation-duration: 1.5s;
+     animation-fill-mode: both;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+     animation-direction: reverse;
+}
+#text3{
+    top: 50%;
+    position: absolute;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    gap: 20px;
+}
+#text3::-webkit-scrollbar{
+    display: none;
+}
+#text3>h1{
+     font-size: 100px;
+     font-weight: 900;
+
+     animation-name: scroll;
+     animation-duration: 1.5s;
+     animation-fill-mode: both;
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+     
+}
+@keyframes  scroll {
+  0%{
+    transform: translateX(0%);
+  }  
+  100%{
+    transform: translateX(calc(-100% - 20px ));
+  }
+}
+#right{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 10%;
+    right: 5%;
+    align-items: center;
+}
+#left2{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 10%;
+    left: 5%;
+}
+#left2>p{
+    width: 260px;
+    font-weight: bold;
+}
+#left2>h6{
+    margin-top: 20px;
+    font-size: 15px;
+    
+}
+#img{
+    position: absolute;
+    width: 25%;
+    height: 80%;
+    background-image: url( https://images.unsplash.com/photo-1671725501835-afb7bd1f21ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80);
+    background-position: cover;
+    background-size: cover;
+    left: 30%;
+    animation-name: photos;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+ @keyframes  photos {
+    0{
+        scale: 0;
+    }
+    50%{
+        scale: 0.5;
+    }
+    100%{
+        scale: 1;
+    }
+ }
+#top{
+    position: absolute;
+    top: 10%;
+    left: 28%;
+    z-index: 999;
+}
+ 
